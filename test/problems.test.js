@@ -60,4 +60,36 @@ test("Problem 3: Grocery List", () => {
     expect(test3.get('Milk')).toBeUndefined();
     expect(test3.get('Eggs')).toBeUndefined();
     expect(test3.get('Cake')).toBeUndefined();
+
+});
+
+test('Problem 4: Fix the broken function', () => {
+
+    prob.createPerson("Joe", "Smith", 43, "Brown", "Green");
+
+    let expectedObj = prob.person;
+
+    expect(expectedObj).toBeDefined();
+    expect(expectedObj.firstName).toBe("Joe");
+    expect(expectedObj.lastName).toBe("Smith");
+    expect(expectedObj.age).toBe(43);
+    expect(expectedObj.hairColor).toBe("Brown");
+    expect(expectedObj.eyeColor).toBe("Green");
+
+    let actualGreeting = expectedObj.greeting();
+
+    expect(actualGreeting).toBe("Hello, my name is Joe Smith.");
+
+    expectedObj.happyBirthday();
+
+    expect(expectedObj.age).toBe(44);
+
+    let finalExpectedAge = 44;
+
+    for (let i = 0; i < 32; i++) {
+        expectedObj.happyBirthday();
+        finalExpectedAge++;
+    }
+
+    expect(expectedObj.age).toBe(finalExpectedAge);
 });

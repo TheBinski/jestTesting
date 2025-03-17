@@ -1,4 +1,7 @@
 class Problems {
+
+    person;
+
     constructor() { }
 
     // Problem 1: Sum the entire array and return the answer
@@ -43,6 +46,34 @@ class Problems {
         return groceries;
 
     }
+
+    // Problem 4: Creating a new object class
+    // In this problem there is another class for a person below.
+    // Have it create a new person and store it on the person variable of this class.
+    // Make sure that the constructor for the Person class sets the properties of the parameters of this function.
+    // Finally, there are a few comments of functions that will need to be completed in the Person class for the tests to pass.
+    createPerson(firstName, lastName, age, hairColor, eyeColor) {
+        
+    }
+
+}
+
+class Person {
+
+    firstName;
+    lastName;
+    age;
+    hairColor;
+    eyeColor;
+
+    // Add Constructor here
+
+
+    // Problem 4: create a function called greeting() and have the it return a string saying "Hello, my name is <INSERT NAME>."
+
+
+    // Problem 4: create a birthday function called happyBirthday() that changes the age of the person by one
+    
 
 }
 
