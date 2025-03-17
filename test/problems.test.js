@@ -93,3 +93,37 @@ test('Problem 4: Create a Person class', () => {
 
     expect(expectedObj.age).toBe(finalExpectedAge);
 });
+
+test('Problem 5: Find the differences of two lists.', () => {
+
+    let list1 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    let list2 = ["Dog", "Cat", "Turtle", "Penguin", "Tiger", "Fish"];
+    let list3 = [-1, 1, 1, 1, 1, -1, -1, -1, 1];
+
+    let list4 = [1, 2, 3, 8, 5, 6, 4, 8, 2];
+    let list5 = ["Dogo", "Cat", "", "Penguin", "Lion", "Pelican"];
+    let list6 = [-1, -1, 1, -1, 1, 1, 1, 1, 1];
+
+    const inputsA = [list1, list2, list3];
+    const inputsB = [list4, list5, list6];
+
+    let expectedList1 = [3, 5, 7];
+    let expectedList2 = [0, 2, 4, 5];
+    let expectedList3 = [1, 3, 5, 6, 7];
+
+    const expectedOutputs = [expectedList1, expectedList2, expectedList3];
+
+    for (let i = 0; i < inputsA.length; i++) {
+        let actual = prob.checkLists(inputsA[i], inputsB[i]);
+
+        expect(actual.length).toBe(expectedOutputs[i].length);
+        actual.forEach((val, i) => {
+            expect(val).toBe(expectedOutputs[i]);
+        });
+    }
+
+});
+
+test('Problem 6: Assign the correct awards.', () => {
+
+});

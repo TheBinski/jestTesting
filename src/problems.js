@@ -56,6 +56,13 @@ class Problems {
         
     }
 
+    // Problem 5: Check for differences between two lists
+    // In this problem fill out the function to find all of the indices in which the values are different between the two inputted lists
+    // Return these values in a list
+    checkLists(listA, listB) {
+        return [];
+    }
+
 }
 
 class Person {
