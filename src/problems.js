@@ -1,5 +1,4 @@
 class Problems {
-
     person;
 
     constructor() { }
@@ -69,6 +68,23 @@ class Problems {
         }
         console.log(finalList);
         return finalList;
+    }
+
+    // Problem 6: Using the award class from the src folder fill out the function below to assign someone awards based on their point totals
+    // Inputs: participant of class Person, list of Points from each event
+    // Output: List of awards that participant received with the lowest awards first. 
+    // NOTE: Do not award Participation Medals
+    /*
+    * Bronze >= 10
+    * Silver >= 50
+    * Gold >= 100
+    * Platinum >= 250
+    * If someone gets 250 points and then proceeds to get another 250.
+    * Then they get another Platinum. This only counts for Platinum. 
+    * Example is someone has 790 points. They should have [Bronze, Silver, Gold, Platinum, Platinum, Platinum]
+    */
+    assignAwards(athlete, eventPoints) {
+        return []
     }
 
 }

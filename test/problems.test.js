@@ -126,4 +126,6 @@ test('Problem 5: Find the differences of two lists.', () => {
 
 test('Problem 6: Assign the correct awards.', () => {
 
+    
+
 });
