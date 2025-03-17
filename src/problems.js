@@ -60,7 +60,15 @@ class Problems {
     // In this problem fill out the function to find all of the indices in which the values are different between the two inputted lists
     // Return these values in a list
     checkLists(listA, listB) {
-        return [];
+        let finalList = [];
+        for(let i = 0; i<listA.length; i++){
+            if(listA[i]!==listB[i]){
+                finalList.push(listA[i]);
+                finalList.push(listB[i]);
+            }
+        }
+        console.log(finalList);
+        return finalList;
     }
 
 }
