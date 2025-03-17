@@ -52,7 +52,7 @@ class Problems {
     // Make sure that the constructor for the Person class sets the properties of the parameters of this function.
     // Finally, there are a few comments of functions that will need to be completed in the Person class for the tests to pass.
     createPerson(firstName, lastName, age, hairColor, eyeColor) {
-        const person = new Person(firstName, lastName, age, hairColor, eyeColor);
+        this.person = new Person(firstName, lastName, age, hairColor, eyeColor);
     }
 
     // Problem 5: Check for differences between two lists
@@ -105,18 +105,18 @@ class Person {
         this.hairColor = hairColor;
         this.eyeColor = eyeColor;
     }
-    }
 
     // Problem 4: create a function called greeting() and have the it return a string saying "Hello, my name is <INSERT NAME>."
-    greeting(this.firstName, this.lastName); {
-        return "Hello, my name is " + this.firstName + " " + this.lastName;
+    greeting() {
+        return "Hello, my name is " + this.firstName + " " + this.lastName + ".";
     }
 
 
     // Problem 4: create a birthday function called happyBirthday() that changes the age of the person by one
-    happyBirthday(this.age); {
+    happyBirthday() {
         this.age++;
     }
+}
 
 
 
