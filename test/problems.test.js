@@ -63,7 +63,7 @@ test("Problem 3: Grocery List", () => {
 
 });
 
-test('Problem 4: Fix the broken function', () => {
+test('Problem 4: Create a Person class', () => {
 
     prob.createPerson("Joe", "Smith", 43, "Brown", "Green");
 
