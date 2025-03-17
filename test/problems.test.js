@@ -57,7 +57,7 @@ test("Problem 3: Grocery List", () => {
 
     expect(test3.get('Apple')).toBe(testPrices3[0]);
     expect(test3.get('Chicken')).toBe(testPrices3[1]);
-    expect(test1.get('Milk')).toBeUndefined();
-    expect(test1.get('Eggs')).toBeUndefined();
-    expect(test1.get('Cake')).toBeUndefined();
+    expect(test3.get('Milk')).toBeUndefined();
+    expect(test3.get('Eggs')).toBeUndefined();
+    expect(test3.get('Cake')).toBeUndefined();
 });
