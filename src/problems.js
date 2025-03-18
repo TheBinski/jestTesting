@@ -63,8 +63,8 @@ class Problems {
         let finalList = [];
         for(let i = 0; i<listA.length; i++){
             if(listA[i]!==listB[i]){
-                finalList.push(listA[i]);
-                finalList.push(listB[i]);
+                finalList.push(i);
+                
             }
         }
         console.log(finalList);
