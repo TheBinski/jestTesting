@@ -87,12 +87,24 @@ class Problems {
     assignAwards(athletes, eventPoints) {
         this.person = new Person(athletes);
         let points = eventPoints;
+        let awardName = "";
         let Award = require('./award');
         this.award = new Award(this.person,points);
         console.log(this.person);
         let owner = this.award.getOwner();
         console.log(owner);
-        
+        if(this.award.getPoints() >= 10){
+            awardName = "Bronze";
+        }
+        else if(this.award.getPoints() >=50){
+            awardName = "Silver";
+        }
+        else if(this.award.getPoints() >=100){
+            awardName = "Gold";
+        }
+        else if(this.award.getPoints()>=250){
+            awardName = "Platinum";
+        }
 
         return {};
     }
