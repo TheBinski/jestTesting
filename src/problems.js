@@ -60,13 +60,11 @@ class Problems {
     // Return these values in a list
     checkLists(listA, listB) {
         let finalList = [];
-        for(let i = 0; i<listA.length; i++){
-            if(listA[i]!==listB[i]){
-                finalList.push(listA[i]);
-                finalList.push(listB[i]);
+        for(let i = 0; i < listA.length; i++){
+            if(listA[i]!=listB[i]){
+                finalList.push(i);
             }
         }
-        console.log(finalList);
         return finalList;
     }
 

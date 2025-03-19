@@ -108,7 +108,7 @@ test('Problem 5: Find the differences of two lists.', () => {
     const inputsA = [list1, list2, list3];
     const inputsB = [list4, list5, list6];
 
-    let expectedList1 = [3, 5, 7];
+    let expectedList1 = [3, 6, 8];
     let expectedList2 = [0, 2, 4, 5];
     let expectedList3 = [1, 3, 5, 6, 7];
 
@@ -117,9 +117,11 @@ test('Problem 5: Find the differences of two lists.', () => {
     for (let i = 0; i < inputsA.length; i++) {
         let actual = prob.checkLists(inputsA[i], inputsB[i]);
 
+        let expected = expectedOutputs[i];
+
         expect(actual.length).toBe(expectedOutputs[i].length);
-        actual.forEach((val, i) => {
-            expect(val).toBe(expectedOutputs[i]);
+        actual.forEach((val, j) => {
+            expect(val).toBe(expected[j]);
         });
     }
 
