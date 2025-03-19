@@ -70,8 +70,8 @@ class Problems {
     }
 
     // Problem 6: Using the award class from the src folder fill out the function below to assign someone awards based on their point totals
-    // Inputs: List of participants of class Person, list of list of Points from each event
-    // Output: Object of a List of awards that the corresponds to the Person who received them. List starts with the lowest awards first.
+    // Inputs: List of participants of class Person, list containing lists of Points from each event
+    // Output: Object of a List of awards that corresponds to the Person who received them. List starts with the lowest awards first.
     // Example object output --> { 'FirstName_LastName': [list of awards] } 
     // NOTE: Do not award Participation Medals
     /*
