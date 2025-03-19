@@ -1,9 +1,10 @@
-const problem = require('../src/problems')
+const problem = require('../src/problems');
+const award = require('../src/award');
 
 let prob;
 
 beforeAll(() => {
-    prob = new problem();
+    prob = new problem.Problems();
 });
 
 test('Problem 1: Sum Array', () => {
@@ -126,6 +127,100 @@ test('Problem 5: Find the differences of two lists.', () => {
 
 test('Problem 6: Assign the correct awards.', () => {
 
+    const athletes = [
+        new problem.Person('John', 'Smith', 23, 'Brown', 'Blue'),
+        new problem.Person('Bill', 'Jones', 27, 'Brown', 'Blue'), 
+        new problem.Person('Ryan', 'Jenkins', 29, 'Brown', 'Blue'), 
+        new problem.Person('Jessica', 'Roberts', 21, 'Brown', 'Blue'),
+        new problem.Person('Floyd', 'Mayweather', 21, 'Brown', 'Blue'), 
+        new problem.Person('Rocky', 'Balboa', 21, 'Brown', 'Blue'), 
+    ];
     
+    const eventPoints = [
+        [1,2,4,2],
+        [5,2,1,3,4,1,2,4],
+        [10,30,2,0,12,15,8],
+        [22,23,4,11,19,18,45,23],
+        [22,23,4,11,19,18,45,23,35,89],
+        [35,45,50, 140, 300, 150, 89],
+    ];
+    
+    const expectedMedals = [
+        [],
+        [
+            new award('Bill Jones', 'Bronze', 11)
+        ],
+        [
+            new award('Ryan Jenkins', 'Bronze', 10),
+            new award('Ryan Jenkins', 'Silver', 54)
+        ],
+        [
+            new award('Jessica Roberts', 'Bronze', 22),
+            new award('Jessica Roberts', 'Silver', 60),
+            new award('Jessica Roberts', 'Gold', 142),
+        ],
+        [
+            new award('Floyd Mayweather', 'Bronze', 22),
+            new award('Floyd Mayweather', 'Silver', 60),
+            new award('Floyd Mayweather', 'Gold', 142),
+            new award('Floyd Mayweather', 'Platinum', 289)
+        ],
+        [
+            new award('Rocky Balboa', 'Bronze', 35),
+            new award('Rocky Balboa', 'Silver', 80),
+            new award('Rocky Balboa', 'Gold', 130),
+            new award('Rocky Balboa', 'Platinum', 270),
+            new award('Rocky Balboa', 'Platinum 2', 570),
+            new award('Rocky Balboa', 'Platinum 3', 809)
+        ],
+    ]
+
+    let actualMedals = prob.assignAwards(athletes, eventPoints);
+    let expCounter = 0;
+
+    expect(actualMedals['John_Smith'].length).toBe(expectedMedals[expCounter++].length);
+
+    expect(actualMedals['Bill_Jones'].length).toBe(expectedMedals[expCounter].length);
+    actualMedals['Bill_Jones'].forEach((val, i) => {
+        expect(val.getOwner()).toBe(expectedMedals[expCounter][i].getOwner());
+        expect(val.getName()).toBe(expectedMedals[expCounter][i].getName());
+        expect(val.getPoints()).toBe(expectedMedals[expCounter][i].getPoints());
+    });
+
+    expCounter++;
+    
+    expect(actualMedals['Ryan_Jenkins'].length).toBe(expectedMedals[expCounter].length);
+    actualMedals['Ryan_Jenkins'].forEach((val, i) => {
+        expect(val.getOwner()).toBe(expectedMedals[expCounter][i].getOwner());
+        expect(val.getName()).toBe(expectedMedals[expCounter][i].getName());
+        expect(val.getPoints()).toBe(expectedMedals[expCounter][i].getPoints());
+    });
+    
+    expCounter++;
+
+    expect(actualMedals['Jessica_Roberts'].length).toBe(expectedMedals[expCounter].length);
+    actualMedals['Jessica_Roberts'].forEach((val, i) => {
+        expect(val.getOwner()).toBe(expectedMedals[expCounter][i].getOwner());
+        expect(val.getName()).toBe(expectedMedals[expCounter][i].getName());
+        expect(val.getPoints()).toBe(expectedMedals[expCounter][i].getPoints());
+    });
+
+    expCounter++;
+    
+    expect(actualMedals['Floyd_Mayweather'].length).toBe(expectedMedals[expCounter].length);
+    actualMedals['Floyd_Mayweather'].forEach((val, i) => {
+        expect(val.getOwner()).toBe(expectedMedals[expCounter][i].getOwner());
+        expect(val.getName()).toBe(expectedMedals[expCounter][i].getName());
+        expect(val.getPoints()).toBe(expectedMedals[expCounter][i].getPoints());
+    });
+
+    expCounter++;
+    
+    expect(actualMedals['Rocky_Balboa'].length).toBe(expectedMedals[expCounter].length);
+    actualMedals['Rocky_Balboa'].forEach((val, i) => {
+        expect(val.getOwner()).toBe(expectedMedals[expCounter][i].getOwner());
+        expect(val.getName()).toBe(expectedMedals[expCounter][i].getName());
+        expect(val.getPoints()).toBe(expectedMedals[expCounter][i].getPoints());
+    });
 
 });

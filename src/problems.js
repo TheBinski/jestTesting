@@ -71,8 +71,9 @@ class Problems {
     }
 
     // Problem 6: Using the award class from the src folder fill out the function below to assign someone awards based on their point totals
-    // Inputs: participant of class Person, list of Points from each event
-    // Output: List of awards that participant received with the lowest awards first. 
+    // Inputs: List of participants of class Person, list of list of Points from each event
+    // Output: Object of a List of awards that the corresponds to the Person who received them. List starts with the lowest awards first.
+    // Example object output --> { 'FirstName_LastName': [list of awards] } 
     // NOTE: Do not award Participation Medals
     /*
     * Bronze >= 10
@@ -80,11 +81,12 @@ class Problems {
     * Gold >= 100
     * Platinum >= 250
     * If someone gets 250 points and then proceeds to get another 250.
-    * Then they get another Platinum. This only counts for Platinum. 
-    * Example is someone has 790 points. They should have [Bronze, Silver, Gold, Platinum, Platinum, Platinum]
+    * Then they get another Platinum with the number of the corresponding Platinum award they just earned. This only counts for Platinum. 
+    * Example is someone has 790 points. They should have [Bronze, Silver, Gold, Platinum, Platinum 2, Platinum 3]
+    * Assume that the eventPoints are in the correct order as the order of the athletes list.
     */
-    assignAwards(athlete, eventPoints) {
-        return []
+    assignAwards(athletes, eventPoints) {
+        return {};
     }
 
 }
@@ -119,5 +121,7 @@ class Person {
 }
 
 
-
-module.exports = Problems;
+module.exports = {
+    Problems: Problems, 
+    Person: Person
+};
