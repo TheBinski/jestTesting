@@ -3,6 +3,7 @@ class Problems {
 
     constructor() { }
 
+
     // Problem 1: Sum the entire array and return the answer
     sumArray(array) {
         let ans = 0;
@@ -84,6 +85,15 @@ class Problems {
     * Assume that the eventPoints are in the correct order as the order of the athletes list.
     */
     assignAwards(athletes, eventPoints) {
+        this.person = new Person(athletes);
+        let points = eventPoints;
+        let Award = require('./award');
+        this.award = new Award(this.person,points);
+        console.log(this.person);
+        let owner = this.award.getOwner();
+        console.log(owner);
+        
+
         return {};
     }
 
