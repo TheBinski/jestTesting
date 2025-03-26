@@ -1,29 +1,29 @@
 class Award {
 
-    #totalPointsAtPointOfEarning;
-    #titleName;
-    #owner;
+    totalPointsAtPointOfEarning;
+    titleName;
+    owner;
 
     constructor(owner, awardName, points) {
-        this.#owner = owner;
-        this.#totalPointsAtPointOfEarning = points;
-        if (this.#totalPointsAtPointOfEarning <= 9) {
-            this.#titleName = 'Participation Medal';
+        this.owner = owner;
+        this.totalPointsAtPointOfEarning = points;
+        if (this.totalPointsAtPointOfEarning <= 9) {
+            this.titleName = 'Participation Medal';
         } else {
-            this.#titleName = awardName;
+            this.titleName = awardName;
         }
     }
 
     getPoints() {
-        return this.#totalPointsAtPointOfEarning;
+        return this.totalPointsAtPointOfEarning;
     }
 
     getName() {
-        return this.#titleName;
+        return this.titleName;
     }
 
     getOwner() {
-        return this.#owner;
+        return this.owner;
     }
 
 }
