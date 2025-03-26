@@ -102,7 +102,17 @@ class Problems {
     // Quick
 
     bubbleSort(unsortedArray) {
-        return unsortedArray.sort((a,b) => a - b);
+        for(let i = 0; i<unsortedArray.length; i++){
+            for(let j = 0; j<unsortedArray.length; j++){
+                if(unsortedArray[j] > unsortedArray[j+1]){
+                    let tempVal = unsortedArray[j];
+                    unsortedArray[j] = unsortedArray[j+1];
+                    unsortedArray[j+1] = tempVal;
+                }
+            }
+        }
+
+        return unsortedArray;
     }
 
     selectionSort(unsortedArray) {
