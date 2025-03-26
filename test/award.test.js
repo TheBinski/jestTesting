@@ -15,7 +15,8 @@ test('Creating award assigns correct props', () => {
         'Lance': {AwardName: 'Platinum', Points: 500},
         'Brock': {AwardName: 'Bronze', Points: 15},
         'Ash': {AwardName: 'Participation Medal', Points: 8},
-        'Oak': {AwardName: 'Silver', Points: 70}}
+        'Oak': {AwardName: 'Silver', Points: 70}
+    };
     
     for (var trainer in owners) {
 

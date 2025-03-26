@@ -72,7 +72,7 @@ class Problems {
     // Problem 6: Using the award class from the src folder fill out the function below to assign someone awards based on their point totals
     // Inputs: List of participants of class Person, list containing lists of Points from each event
     // Output: Object of a List of awards that corresponds to the Person who received them. List starts with the lowest awards first.
-    // Example object output --> { 'FirstName_LastName': [list of awards] } 
+    // Example object output --> { 'FirstName_LastName': [ Array of Awards ] } --> Array of Awards is an array with the elements being the Award objects. 
     // NOTE: Do not award Participation Medals
     /*
     * Bronze >= 10
@@ -88,6 +88,40 @@ class Problems {
        
 
         return {};
+    }
+
+    // Problem 7: Fill in the sorting methods below.
+    // Have them return the newly sorted array.
+    // The Array will only ever consist of numbers.
+    // If you need to make additional methods outside of these methods then feel free to do so.
+    // Do in order. It is a single test and they are being tested in the order below.
+    // Bubble
+    // Selection
+    // Insertion
+    // Merge
+    // Quick
+
+    bubbleSort(unsortedArray) {
+        return unsortedArray.sort((a,b) => a - b);
+    }
+
+    selectionSort(unsortedArray) {
+        return [];
+    }
+
+    insertionSort(unsortedArray) {
+        return [];
+        
+    }
+
+    mergeSort(unsortedArray) {
+        
+        return [];
+    }
+
+    quickSort(unsortedArray) {
+        return [];
+        
     }
 
 }

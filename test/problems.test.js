@@ -226,3 +226,35 @@ test('Problem 6: Assign the correct awards.', () => {
     });
 
 });
+
+test('Problem 7: Sort the Arrays.', () => {
+
+    let unsortedBubble = [13,14,4,5,18,19,8,6,7,12,15,20,1,2,3,16,17,9,10,11];
+    let unsortedSelection = [15,20,1,2,3,16,17,9,10,11,13,14,4,5,18,19,8,6,7,12];
+    let unsortedInsertion = [11,19,8,15,20,1,9,10,6,2,3,16,17,7,12,13,14,4,5,18];
+    let unsortedMerge = [16,17,7,12,11,19,8,15,1,9,10,6,2,3,20,13,14,4,5,18];
+    let unsortedQuick = [1,9,10,6,2,3,15,12,13,14,4,5,18,11,19,8,20,16,17,7];
+
+    let expectedArray = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
+
+    let sortedBubble = prob.bubbleSort(unsortedBubble);
+    expect(sortedBubble).toEqual(expectedArray);
+    console.log('Bubble Sort Success!');
+
+    let sortedSelection = prob.selectionSort(unsortedSelection);
+    expect(sortedSelection).toEqual(expectedArray);
+    console.log('Selection Sort Success!');
+
+    let sortedInsertion = prob.insertionSort(unsortedInsertion);
+    expect(sortedInsertion).toEqual(expectedArray);
+    console.log('Insertion Sort Success!');
+
+    let sortedMerge = prob.mergeSort(unsortedMerge);
+    expect(sortedMerge).toEqual(expectedArray);
+    console.log('Merge Sort Success!');
+
+    let sortedQuick = prob.quickSort(unsortedQuick);
+    expect(sortedQuick).toEqual(expectedArray);
+    console.log('Quick Sort Success!');
+
+});
