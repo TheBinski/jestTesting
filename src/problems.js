@@ -85,22 +85,7 @@ class Problems {
     * Assume that the eventPoints are in the correct order as the order of the athletes list.
     */
     assignAwards(athletes, eventPoints) {
-       let points = 0;
-       let prize = " ";
-       for (let i = 0; i<eventPoints.length; i++){
-        if(eventPoints[i]>=10){
-            prize = "Bronze";
-        }
-        else if (eventPoints[i]>=50){
-            prize = "Silver";
-        }
-        else if(eventPoints[i]>=100){
-            prize = "Gold";
-        }
-        else if(eventPoints[i]>=250){
-            prize = "Platinum";
-        }
-       }
+       
 
         return {};
     }
