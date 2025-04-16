@@ -116,19 +116,7 @@ class Problems {
     }
 
     selectionSort(unsortedArray) {
-        for(let i = 0; i<unsortedArray.length; i++){
-            let smallestIndex = i;
-            for(let j = i + 1; j<unsortedArray.length; j++){
-                if(unsortedArray[j]<unsortedArray[smallestIndex]){
-                    smallestIndex = j;
-                }
-                if(smallestIndex !== i){
-                    let tempVal = unsortedArray[smallestIndex];
-                    unsortedArray[smallestIndex] = unsortedArray[i];
-                    unsortedArray[i] = tempVal;
-                }
-            }
-        }
+        
         return unsortedArray;
     }
 
