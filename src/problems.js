@@ -131,8 +131,17 @@ class Problems {
     }
 
     insertionSort(unsortedArray) {
-        
-        
+        for(let i = 1; i < unsortedArray.length; i++){
+            let key = unsortedArray[i];
+            let j = i - 1;
+            while (j >= 0 && unsortedArray[j] > key){
+                unsortedArray[j + 1] = unsortedArray[j];
+                j = j- 1;
+            }
+            unsortedArray[j + 1] = key;
+        }
+
+        return unsortedArray;
     }
 
     mergeSort(unsortedArray) {
