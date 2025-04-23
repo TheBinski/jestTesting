@@ -89,6 +89,7 @@ class Problems {
             "points": [eventPoints]
         }
         this.awards=new Award;
+        
 
         return {};
     }
