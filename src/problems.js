@@ -85,9 +85,9 @@ class Problems {
     * Assume that the eventPoints are in the correct order as the order of the athletes list.
     */
     assignAwards(athletes, eventPoints) {
-        {"participants": athletes,
+        let json = {"participants": athletes,
             "points": [eventPoints]
-        };
+        }
         this.awards=new Award;
 
         return {};
