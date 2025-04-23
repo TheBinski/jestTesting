@@ -86,7 +86,7 @@ class Problems {
     */
     assignAwards(athletes, eventPoints) {
         let json {"participants": athletes,
-            [points]: [eventPoints]
+            "points": [eventPoints]
         }
         return {};
     }
