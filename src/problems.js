@@ -88,6 +88,8 @@ class Problems {
         let json {"participants": athletes,
             "points": [eventPoints]
         }
+        this.awards=new Award;
+        
         return {};
     }
 
