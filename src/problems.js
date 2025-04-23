@@ -87,7 +87,7 @@ class Problems {
     assignAwards(athletes, eventPoints) {
         {"participants": athletes,
             "points": [eventPoints]
-        }
+        };
         this.awards=new Award;
 
         return {};
