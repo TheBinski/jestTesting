@@ -145,6 +145,9 @@ class Problems {
     }
 
     mergeSort(unsortedArray) {
+        if(unsortedArray.length ===1){
+            return unsortedArray;
+        }
         
         return [];
     }
