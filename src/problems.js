@@ -87,7 +87,10 @@ class Problems {
     assignAwards(athletes, eventPoints) {
        let awards = new Award;
        {
-        
+        "participants":
+        athletes, 
+        "points": 
+        [eventPoints]
        }
 
         return {};
