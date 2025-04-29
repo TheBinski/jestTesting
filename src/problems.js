@@ -1,3 +1,5 @@
+const Award = require('../src/award');
+
 class Problems {
     person;
 
@@ -86,10 +88,19 @@ class Problems {
     */
     assignAwards(athletes, eventPoints) {
         let json = {"participants": athletes,
-            "points": [eventPoints]
+            "points": eventPoints,
+        };
+
+        this.awards = new Award();
+        let sum = 0;
+        for(let i=0; i<=eventPoints.length; i++){
+            sum += i;
         }
-        this.awards=new Award;
-        
+
+        console.log(athletes);
+        console.log(eventPoints);
+        console.log(json);
+        console.log(sum);
 
         return {};
     }
@@ -192,7 +203,6 @@ class Person {
     }
 }
 
-import {Award} from './award';
 module.exports = {
     Problems: Problems, 
     Person: Person
