@@ -110,11 +110,12 @@ class Problems {
     sumAllArrays(arrays) {
         let totals = [];
         let sum =0;
-        for(let i =0; i<=arrays.length;i++){
-            for(let j=0; j<=arrays[i.length];j++){
-                sum += arrays[j];
-                totals = [sum];
+        for(let i =0; i<arrays.length;i++){
+            for(let j=0; j<arrays[i.length];j++){
+                sum += arrays[i][j];
             }
+
+            totals = [sum];
         }
         return totals;
     }
