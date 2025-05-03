@@ -260,10 +260,9 @@ test('Problem 7: Sort the Arrays.', () => {
 });
 
 test("Problem 6.1: Finding Sub Array Totals", ()=>{
-    let input = [[5, 13, 1, 12, 3, 9, 2, 1, 4], [35, 13, 8, 22, 2], [19, 21]];
-    let expected = [50, 85, 40];
+    let input = [[5, 13, 1, 12, 3, 9, 2, 1, 4], "apple", [35, 13, 8, 21, 2], [19, 21]];
+    let expected = [50, 79, 40];
 
     let actual = prob.sumAllArrays(input);
-
     expect(actual).toEqual(expected); 
 });

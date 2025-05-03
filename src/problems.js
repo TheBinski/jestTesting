@@ -109,14 +109,25 @@ class Problems {
     //Sum all of the nested arrays and output an array of the totals
     sumAllArrays(arrays) {
         let totals = [];
-        let sum = 0;
-        for(let i =0; i<=arrays.length;i++){
-            for(let j=0; j<arrays[i].length;j++){
-                sum += arrays[i][j];
-                totals[j] = sum;
+        if (Array.isArray(arrays)) {
+        
+            console.log(Array.isArray(arrays));
+            for(let i =0; i<=arrays.length;i++){
+                let subArray = arrays[i];
+                let sum = 0;
+
+                if (Array.isArray(subArray)) {
+                    for(let j=0; j < arrays[i].length; j++){
+                        sum += arrays[i][j];
+                    }
+                    
+                    totals.push(sum);
+                }
+               
             }
-           
+
         }
+        
         return totals;
     }
 
