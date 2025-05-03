@@ -266,3 +266,21 @@ test("Problem 6.1: Finding Sub Array Totals", ()=>{
     let actual = prob.sumAllArrays(input);
     expect(actual).toEqual(expected); 
 });
+
+test('Problem 8: Duck Duck Goose', () => {
+
+    let players = ["Timmy", "Sammy", "Billy", "Tommy", "Tammy"];
+
+    let expectedLastPlayer1 = "Tommy";
+    let expectedLastPlayer2 = "Billy";
+    let expectedLastPlayer3 = "Sammy";
+
+    let actualLastPlayer1 = prob.playDuckDuckGoose(players, 3);
+    let actualLastPlayer2 = prob.playDuckDuckGoose(players, 7);
+    let actualLastPlayer3 = prob.playDuckDuckGoose(players, 23);
+
+    expect(actualLastPlayer1).toBe(expectedLastPlayer1);
+    expect(actualLastPlayer2).toBe(expectedLastPlayer2);
+    expect(actualLastPlayer3).toBe(expectedLastPlayer3);
+
+});

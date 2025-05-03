@@ -198,6 +198,24 @@ class Problems {
         
     }
 
+    // Problem 8: Program Duck Duck Goose
+    // Rules: You are given a list of player names and a number at which people are considered the goose.
+    // Loop through the list and when you get to the goose number delete the member from the list.
+    // Do this until only one player remains and return the player's name.
+    // Make sure to continue in the list from where you left off after removing a player from the list.
+    // Inputs: players(Array of Strings) --> List of player names, gooseNumber(Number) --> Number til goose
+    // EXAMPLE: 
+    // Goose Number = 4
+    // Players = [ Mary, Tom, Bob ]
+    // Goose 1 --> Mary
+    // Players = [ Tom, Bob ]
+    // Goose 2 --> Bob
+    // Players = [ Tom ]
+    // Answer == Tom
+    playDuckDuckGoose(players, gooseNumber) {
+        return "";
+    }
+
 }
 
 class Person {
