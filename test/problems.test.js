@@ -258,3 +258,9 @@ test('Problem 7: Sort the Arrays.', () => {
     console.log('Quick Sort Success!');
 
 });
+
+test("Problem 6.1: Finding Sub Array Totals", ()=>{
+    let expected = 10;
+    let actual= prob.Addition(7, 3);
+    expect(actual).toEqual(expected); 
+});

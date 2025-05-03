@@ -105,6 +105,12 @@ class Problems {
         return {};
     }
 
+    //Problem 6.1: Finding Sub Array Totals
+    //Do addition
+    Addition(x ,y){
+        return x + y;
+    }
+
     // Problem 7: Fill in the sorting methods below.
     // Have them return the newly sorted array.
     // The Array will only ever consist of numbers.
