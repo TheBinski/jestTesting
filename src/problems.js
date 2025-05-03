@@ -106,9 +106,9 @@ class Problems {
     }
 
     //Problem 6.1: Finding Sub Array Totals
-    //Do addition
-    Addition(x ,y){
-        return x + y;
+    //Sum all of the nested arrays and output an array of the totals
+    sumAllArrays(arrays) {
+        return [];
     }
 
     // Problem 7: Fill in the sorting methods below.
