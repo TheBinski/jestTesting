@@ -113,9 +113,8 @@ class Problems {
         for(let i =0; i<=arrays.length;i++){
             for(let j=0; j<=arrays[i.length];j++){
                 sum += arrays[j];
+                totals = [sum];
             }
-
-            totals = [sum];
         }
         return totals;
     }
