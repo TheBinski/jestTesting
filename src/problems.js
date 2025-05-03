@@ -108,7 +108,16 @@ class Problems {
     //Problem 6.1: Finding Sub Array Totals
     //Sum all of the nested arrays and output an array of the totals
     sumAllArrays(arrays) {
-        return [];
+        let totals = [];
+        let sum =0;
+        for(let i =0; i<=arrays.length;i++){
+            for(let j=0; j<=arrays[i].length;j++){
+                sum += arrays[j];
+            }
+
+            totals = [sum];
+        }
+        return totals;
     }
 
     // Problem 7: Fill in the sorting methods below.
