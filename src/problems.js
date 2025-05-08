@@ -214,7 +214,7 @@ class Problems {
     // Answer == Tom
     playDuckDuckGoose(players, gooseNumber) {
         let indexNumber = gooseNumber - 1; 
-        for(let int i = 0; i<players.length; i++){
+        for(let i = 0; i<players.length; i++){
             if(i == indexNumber){
                 players[i].pop();
             }
