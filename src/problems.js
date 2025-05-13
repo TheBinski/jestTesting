@@ -213,16 +213,16 @@ class Problems {
     // Players = [ Tom ]
     // Answer == Tom
     playDuckDuckGoose(players, gooseNumber) {
+        // Look into Circular Arrays
         let indexNumber = players.length - 1; 
-        for(let i = 0; i<players.length; i++){
-            if(gooseNumber == indexNumber){
-                players[i].pop();
+        while(let i = 1; i <= players.length; i++;) { // turn into while
+            if (gooseNumber == i) {
+                players[i-1].pop();
             }
         }
         
-
-        return "";
-        }
+        return players[0];
+    }
        
     
 
