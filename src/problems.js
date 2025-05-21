@@ -215,11 +215,11 @@ class Problems {
     playDuckDuckGoose(players, gooseNumber) {
         // Look into Circular Arrays
         let i = 0;
-        while( i < players.length) { // turn into while
+        while( i < players.length -1 ) { // turn into while
             i++;
-            let arrayPos = i % players.length;
+            let arrayPos = i % players.length -1;
             if(gooseNumber == arrayPos){
-                players[arrayPos].pop();
+                players[arrayPos].pop;
             }
 
             }
