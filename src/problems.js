@@ -217,6 +217,7 @@ class Problems {
         let i = 0;
         while( i < players.length) { // turn into while
             let arrayPos = i % players.length;
+            i++;
             if(gooseNumber == arrayPos){
                 players[arrayPos].pop();
             }
