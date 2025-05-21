@@ -217,7 +217,12 @@ class Problems {
         let i = 0;
         while( i < players.length) { // turn into while
             let arrayPos = i % players.length;
+            if(gooseNumber == arrayPos){
+                players[arrayPos].pop();
             }
+
+            }
+            console.log(players);
             return players[0];
         }
 
@@ -227,7 +232,7 @@ class Problems {
        
     
 
-}
+
 
 class Person {
 
