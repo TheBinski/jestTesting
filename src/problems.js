@@ -216,8 +216,8 @@ class Problems {
         // Look into Circular Arrays
         let i = 0;
         while( i < players.length) { // turn into while
-            let arrayPos = i % players.length;
             i++;
+            let arrayPos = i % players.length;
             if(gooseNumber == arrayPos){
                 players[arrayPos].pop();
             }
