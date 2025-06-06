@@ -214,17 +214,7 @@ class Problems {
     // Answer == Tom
     playDuckDuckGoose(players, gooseNumber) {
         // Look into Circular Arrays
-        let i = 0;
-        while( i < players.length) { // turn into while
-            i++;
-            let arrayPos = i % players.length ;
-            if(gooseNumber == arrayPos){
-                players.splice(arrayPos-1, 1);
-            }
-
-            console.log(players);
-
-            }
+         // turn into while
             
             return players[0];
         }
