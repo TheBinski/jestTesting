@@ -217,11 +217,11 @@ class Problems {
          // turn into while
             
             return players[0];
-        }
+    }
 
         
         
-    }
+}
        
     
 
