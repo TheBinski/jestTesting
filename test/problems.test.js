@@ -287,3 +287,17 @@ test('Problem 8: Duck Duck Goose', () => {
     expect(actualLastPlayer3).toBe(expectedLastPlayer3);
 
 });
+
+test('Problem 8.1: Accessing Array in a Circle', ()=> {
+
+    let players1=[1,2,3];
+
+    let firstTest = prob.playDuckDuckGoose(players1, 3);
+    let actualResult = prob.playDuckDuckGoose(players1, 5);
+    let actualResult2 = prob.playDuckDuckGoose(players1, 9);
+
+    expect(firstTest).toBe(3);
+    expect(actualResult).toBe(2);
+    expect(actualResult2).toBe(3);
+
+});
