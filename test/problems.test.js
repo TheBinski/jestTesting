@@ -309,5 +309,5 @@ test('Problem 8.2: Removing a Specific Item from an Array', ()=> {
     
     let theFirstTest = prob.playDuckDuckGoose(initialArray, 3);
 
-    expect(theFirstTest).toBe(expectedArray1);
+    expect(theFirstTest).toEqual(expectedArray1);
 });
