@@ -222,9 +222,12 @@ class Problems {
             if(position>=players.length){
                 position = 0;
             }
+            if(counter == gooseNumber){
+                players.splice(position, 1);
+            }
         }
             
-        return players[position];
+        return players;
     }
 
         

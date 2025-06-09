@@ -301,3 +301,13 @@ test('Problem 8.1: Accessing Array in a Circle', ()=> {
     expect(actualResult2).toBe(3);
 
 });
+
+test('Problem 8.2: Removing a Specific Item from an Array', ()=> {
+
+    let initialArray = [1, 2, 3, 4];
+    let expectedArray1 = [1, 2, 4];
+    
+    let theFirstTest = prob.playDuckDuckGoose(initialArray, 3);
+
+    expect(theFirstTest).toBe(expectedArray1);
+});
