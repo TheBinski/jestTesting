@@ -219,12 +219,12 @@ class Problems {
         while(counter < gooseNumber){
             counter++;
             position++;
-            
             if(counter == gooseNumber){
                 players.splice(position, 1);
-            }
+                }
             if(position>=players.length){
                 position = 0;
+                
             }
         }
             
