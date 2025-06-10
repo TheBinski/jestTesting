@@ -225,7 +225,10 @@ class Problems {
            
             if(counter == gooseNumber){
             players.splice(position, 1);
-            
+            counter = 1;
+            }
+            if(players.length == 1){
+                break;
             }
         }
             
