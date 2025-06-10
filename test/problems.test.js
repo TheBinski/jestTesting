@@ -306,13 +306,17 @@ test('Problem 8.2: Removing a Specific Item from an Array', ()=> {
 
     let initialArray1 = [1, 2, 3, 4];
     let initialArray2 = [1, 2, 3, 4];
+    let initialArray3 = [1, 2, 3, 4];
     let expectedArray1 = [1, 2, 4];
     let expectedArray2 = [2, 3, 4];
+    let expectedArray3 = [1, 2, 3];
     
     let theFirstTest = prob.playDuckDuckGoose(initialArray1, 3);
     let firstRemoval = prob.playDuckDuckGoose(initialArray2, 5);
+    let secondRemoval = prob.playDuckDuckGoose(initialArray3, 24);
 
     expect(theFirstTest).toEqual(expectedArray1);
     expect(firstRemoval).toEqual(expectedArray2);
+    expect(secondRemoval).toEqual(expectedArray3);
 
 });
