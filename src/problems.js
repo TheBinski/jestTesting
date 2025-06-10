@@ -230,7 +230,6 @@ class Problems {
             counter=1;
             }
             
-            
             if(players.length == 1){
                 break;
             }
