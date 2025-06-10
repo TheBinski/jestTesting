@@ -304,12 +304,13 @@ test('Problem 8.1: Accessing Array in a Circle', ()=> {
 
 test('Problem 8.2: Removing a Specific Item from an Array', ()=> {
 
-    let initialArray = [1, 2, 3, 4];
+    let initialArray1 = [1, 2, 3, 4];
+    let initialArray2 = [1, 2, 3, 4];
     let expectedArray1 = [1, 2, 4];
     let expectedArray2 = [2, 3, 4];
     
-    let theFirstTest = prob.playDuckDuckGoose(initialArray, 3);
-    let firstRemoval = prob.playDuckDuckGoose(initialArray, 5);
+    let theFirstTest = prob.playDuckDuckGoose(initialArray1, 3);
+    let firstRemoval = prob.playDuckDuckGoose(initialArray2, 5);
 
     expect(theFirstTest).toEqual(expectedArray1);
     expect(firstRemoval).toEqual(expectedArray2);
