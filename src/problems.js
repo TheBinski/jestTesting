@@ -217,15 +217,11 @@ class Problems {
         let counter = 1;
         let position = 0;
         while(counter < gooseNumber){
-            counter++;
             position++;
+            counter++;
             
             if(position>=players.length){
                 position = 0;
-            }
-            
-            if(players.length == 1){
-                break;
             }
             
             if(counter == gooseNumber){
@@ -235,9 +231,13 @@ class Problems {
             }
             
             
+            if(players.length == 1){
+                break;
+            }
+            
         }
             
-        return players[position];
+        return players[0];
     }
 
         
