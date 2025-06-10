@@ -220,13 +220,10 @@ class Problems {
             position++;
             counter++;
             
-            if(position>=players.length){
-                position = 0;
-            }
-            
             if(counter == gooseNumber){
             players.splice(position, 1);
             position++;
+            //counter++;
             counter=1;
             }
             
@@ -234,6 +231,10 @@ class Problems {
                 break;
             }
             
+            if(position>=players.length){
+                position = 0;
+            }
+               
         }
             
         return players[0];
