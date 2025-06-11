@@ -214,29 +214,36 @@ class Problems {
     // Answer == Tom
     playDuckDuckGoose(players, gooseNumber) {
 
-        let counter = 1;
+        let counter = 0;
         let position = 0;
         while(counter < gooseNumber){
-            position++;
             counter++;
+            //position++;
+
+            if(counter == gooseNumber){
+            players.splice(position, 1);
+            position--;
+            //counter++;
+            counter=0;
+            }
+
+            //counter++;
+            //position++;
+
+            if(position>=players.length){
+                position = 0;
+            }
 
             if(players.length == 1){
                 break;
             }
-
-            if(counter == gooseNumber){
-            players.splice(position, 1);
-            position++;
-            counter++;
-            counter=1;
-            }
             
-            if(position>=players.length){
-                position = 0;
-            }
+            //counter++;
+            position++;
+            
         }
             
-        return players[0];
+        return players;
     }
 
         
