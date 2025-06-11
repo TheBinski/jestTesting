@@ -288,6 +288,17 @@ test('Problem 8: Duck Duck Goose', () => {
 
 });
 
+test('Problem 8.05: Most boring game of duckduckgoose', () => {
+    let players = ["Timmy", "Sammy", "Billy", "Tommy", "Tammy"];
+
+    let expectedLastPlayer = "Tammy";
+
+    let actualLastPlayer = prob.playDuckDuckGoose(players, 1);
+
+    expect(actualLastPlayer).toBe(expectedLastPlayer);
+
+});
+
 test('Problem 8.1: Accessing Array in a Circle', ()=> {
 
     let players1=[1,2,3];
