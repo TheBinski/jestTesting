@@ -227,7 +227,6 @@ class Problems {
                 position++;
             }
 
-
             if(position>=players.length){
                 position = 0;
             }
