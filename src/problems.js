@@ -243,7 +243,7 @@ class Problems {
             
         }
             
-        return players;
+        return players[0];
     }
 
         
