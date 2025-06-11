@@ -214,21 +214,19 @@ class Problems {
     // Answer == Tom
     playDuckDuckGoose(players, gooseNumber) {
 
-        let counter = 0;
+        let counter = 1;
         let position = 0;
-        while(counter < gooseNumber){
-            counter++;
-            //position++;
+        while(counter <= gooseNumber){
 
             if(counter == gooseNumber){
             players.splice(position, 1);
-            position--;
-            //counter++;
-            counter=0;
+            counter=1;
+            }
+            else{
+                counter++;
+                position++;
             }
 
-            //counter++;
-            //position++;
 
             if(position>=players.length){
                 position = 0;
@@ -237,9 +235,6 @@ class Problems {
             if(players.length == 1){
                 break;
             }
-            
-            //counter++;
-            position++;
             
         }
             
