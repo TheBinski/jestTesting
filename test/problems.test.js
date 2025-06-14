@@ -299,35 +299,78 @@ test('Problem 8.05: Most boring game of duckduckgoose', () => {
 
 });
 
-test('Problem 8.1: Accessing Array in a Circle', ()=> {
+// ------ DEPRECATED TESTS ------
+// test('Problem 8.1: Accessing Array in a Circle', ()=> {
 
-    let players1=[1,2,3];
+//     let players1=[1,2,3];
 
-    let firstTest = prob.playDuckDuckGoose(players1, 3);
-    let actualResult = prob.playDuckDuckGoose(players1, 5);
-    let actualResult2 = prob.playDuckDuckGoose(players1, 9);
+//     let firstTest = prob.playDuckDuckGoose(players1, 3);
+//     let actualResult = prob.playDuckDuckGoose(players1, 5);
+//     let actualResult2 = prob.playDuckDuckGoose(players1, 9);
 
-    expect(firstTest).toBe(3);
-    expect(actualResult).toBe(2);
-    expect(actualResult2).toBe(3);
+//     expect(firstTest).toBe(3);
+//     expect(actualResult).toBe(2);
+//     expect(actualResult2).toBe(3);
 
+// });
+
+// test('Problem 8.2: Removing a Specific Item from an Array', ()=> {
+
+//     let initialArray1 = [1, 2, 3, 4];
+//     let initialArray2 = [1, 2, 3, 4];
+//     let initialArray3 = [1, 2, 3, 4];
+//     let expectedArray1 = [1, 2, 4];
+//     let expectedArray2 = [2, 3, 4];
+//     let expectedArray3 = [1, 2, 3];
+    
+//     let theFirstTest = prob.playDuckDuckGoose(initialArray1, 3);
+//     let firstRemoval = prob.playDuckDuckGoose(initialArray2, 5);
+//     let secondRemoval = prob.playDuckDuckGoose(initialArray3, 24);
+
+//     expect(theFirstTest).toEqual(expectedArray1);
+//     expect(firstRemoval).toEqual(expectedArray2);
+//     expect(secondRemoval).toEqual(expectedArray3);
+
+// });
+// ------ END OF DEPRECATED TESTS ------
+
+test('Problem 9: Find the Palindromes', () => {
+    let input1 = 414;
+    let input2 = 1221;
+    let input3 = 12;
+    let input4 = 2211122;
+    let input5 = 313131;
+    let input6 = 43434343434343434;
+
+    let answer1 = prob.isPalindrome(input1);
+    let answer2 = prob.isPalindrome(input2);
+    let answer3 = prob.isPalindrome(input3);
+    let answer4 = prob.isPalindrome(input4);
+    let answer5 = prob.isPalindrome(input5);
+    let answer6 = prob.isPalindrome(input6);
+
+    expect(true).toBe(answer1);
+    expect(true).toBe(answer2);
+    expect(false).toBe(answer3);
+    expect(true).toBe(answer4);
+    expect(false).toBe(answer5);
+    expect(true).toBe(answer6);
 });
 
-test('Problem 8.2: Removing a Specific Item from an Array', ()=> {
+test("Problem 10: Cutting a deck of cards", () => {
+    let deck1 = [1, 2, 3, 4, 5, 6];
+    let deck2 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    let deck3 = ['2 Heart', '6 Club', 'J Diamond', 'K Heart', 'A Spade', '9 Spade', '3 Diamond', '10 Club'];
 
-    let initialArray1 = [1, 2, 3, 4];
-    let initialArray2 = [1, 2, 3, 4];
-    let initialArray3 = [1, 2, 3, 4];
-    let expectedArray1 = [1, 2, 4];
-    let expectedArray2 = [2, 3, 4];
-    let expectedArray3 = [1, 2, 3];
-    
-    let theFirstTest = prob.playDuckDuckGoose(initialArray1, 3);
-    let firstRemoval = prob.playDuckDuckGoose(initialArray2, 5);
-    let secondRemoval = prob.playDuckDuckGoose(initialArray3, 24);
+    let cutDeck1 = [4,5,6,1,2,3];
+    let cutDeck2 = [6,7,8,9,1,2,3,4,5];
+    let cutDeck3 = ['A Spade', '9 Spade', '3 Diamond', '10 Club', '2 Heart', '6 Club', 'J Diamond', 'K Heart']
 
-    expect(theFirstTest).toEqual(expectedArray1);
-    expect(firstRemoval).toEqual(expectedArray2);
-    expect(secondRemoval).toEqual(expectedArray3);
+    prob.cutDeck(deck1);
+    prob.cutDeck(deck2);
+    prob.cutDeck(deck3);
 
+    expect(action1).toEqual(cutDeck1);
+    expect(action2).toEqual(cutDeck2);
+    expect(action3).toEqual(cutDeck3);
 });

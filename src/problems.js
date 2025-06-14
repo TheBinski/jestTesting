@@ -240,13 +240,22 @@ class Problems {
         return players[0];
     }
 
+    // Problem 9: 
+    // Determine if the inputted number is a Palindrome and return true if it is
+    isPalindrome(number) {
+        return false;
+    }       
+
+    // Problem 10: 
+    // Take the input deckOfCards and take the back half of it and put it in the front
+    // If the deck is not an even number then leave the extra card on the bottom
+    // Do NOT return the answer. This should affect the original deckOfCards just as it would with a real deck of cards.
+    cutDeck(deckOfCards) {
         
+    }
+
         
 }
-       
-    
-
-
 
 class Person {
 
