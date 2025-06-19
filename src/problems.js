@@ -243,9 +243,21 @@ class Problems {
     // Problem 9: 
     // Determine if the inputted number is a Palindrome and return true if it is
     isPalindrome(number) {
-        return false;
-    }       
+        let numberVar = number;
+        let numberString = numberVar.toString();
+        let characterArray = numberString.split('');
+        characterArray.reverse();
+        let reversedString = characterArray;
+        reversedString.join('')
+        numberVar = parseInt(reversedString);
+        if(numberVar == number){
+            return true;
+        }
+        else{
 
+        return false;
+        }
+    }       
     // Problem 10: 
     // Take the input deckOfCards and take the back half of it and put it in the front
     // If the deck is not an even number then leave the extra card on the bottom
