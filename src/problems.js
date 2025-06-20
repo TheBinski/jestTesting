@@ -247,15 +247,14 @@ class Problems {
         let numberString = numberVar.toString();
         let characterArray = numberString.split('');
         characterArray.reverse();
-        let reversedString = characterArray;
-        reversedString.join('')
-        numberVar = parseInt(reversedString);
-        if(numberVar == number){
+        let reversedString = characterArray.join('');
+        numberVar = parseFloat(reversedString);
+
+        if (numberVar == number) {
             return true;
         }
-        else{
-
-        return false;
+        else {
+            return false;
         }
     }       
     // Problem 10: 

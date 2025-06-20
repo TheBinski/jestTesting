@@ -340,7 +340,7 @@ test('Problem 9: Find the Palindromes', () => {
     let input3 = 12;
     let input4 = 2211122;
     let input5 = 313131;
-    let input6 = 43434343434343434;
+    let input6 = 434343434343434;
 
     let answer1 = prob.isPalindrome(input1);
     let answer2 = prob.isPalindrome(input2);
