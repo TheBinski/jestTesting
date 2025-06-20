@@ -349,12 +349,12 @@ test('Problem 9: Find the Palindromes', () => {
     let answer5 = prob.isPalindrome(input5);
     let answer6 = prob.isPalindrome(input6);
 
-    expect(true).toBe(answer1);
-    expect(true).toBe(answer2);
-    expect(false).toBe(answer3);
-    expect(true).toBe(answer4);
-    expect(false).toBe(answer5);
-    expect(true).toBe(answer6);
+    expect(answer1).toBe(true);
+    expect(answer2).toBe(true);
+    expect(answer3).toBe(false);
+    expect(answer4).toBe(true);
+    expect(answer5).toBe(false);
+    expect(answer6).toBe(true);
 });
 
 test("Problem 10: Cutting a deck of cards", () => {
@@ -370,7 +370,7 @@ test("Problem 10: Cutting a deck of cards", () => {
     prob.cutDeck(deck2);
     prob.cutDeck(deck3);
 
-    expect(action1).toEqual(cutDeck1);
-    expect(action2).toEqual(cutDeck2);
-    expect(action3).toEqual(cutDeck3);
+    expect(cutDeck1).toEqual(deck1);
+    expect(cutDeck2).toEqual(deck2);
+    expect(cutDeck3).toEqual(deck3);
 });
