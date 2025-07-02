@@ -264,8 +264,11 @@ class Problems {
     cutDeck(deckOfCards) {
         console.log(deckOfCards);
         let midPoint = Math.ceil(deckOfCards.length);
+        console.log(midPoint);
         let secondHalf = deckOfCards.slice(midPoint);
+        console.log(secondHalf);
         let firstHalf = deckOfCards.slice(0, midPoint);
+        console.log(firstHalf);
         deckOfCards = secondHalf.concat(firstHalf);
         console.log(deckOfCards);
 
