@@ -262,15 +262,15 @@ class Problems {
     // If the deck is not an even number then leave the extra card on the bottom
     // Do NOT return the answer. This should affect the original deckOfCards just as it would with a real deck of cards.
     cutDeck(deckOfCards) {
-        console.log(deckOfCards);
+        //console.log(deckOfCards);
         let midPoint = Math.ceil(deckOfCards.length/2);
-        console.log(midPoint);
+        //console.log(midPoint);
         let secondHalf = deckOfCards.slice(midPoint);
         //console.log(secondHalf);
         let firstHalf = deckOfCards.slice(0, midPoint);
         //console.log(firstHalf);
         deckOfCards = secondHalf.concat(firstHalf);
-        //console.log(deckOfCards);
+        console.log(deckOfCards);
 
     }
 
