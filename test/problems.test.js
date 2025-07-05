@@ -370,7 +370,7 @@ test("Problem 10: Cutting a deck of cards", () => {
     prob.cutDeck(deck2);
     prob.cutDeck(deck3);
 
-    expect(cutDeck1).toEqual(deck1);
-    expect(cutDeck2).toEqual(deck2);
-    expect(cutDeck3).toEqual(deck3);
+    expect(deck1).toEqual(cutDeck1);
+    expect(deck2).toEqual(cutDeck2);
+    expect(deck3).toEqual(cutDeck3);
 });
