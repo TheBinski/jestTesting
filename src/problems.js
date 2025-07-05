@@ -271,9 +271,13 @@ class Problems {
         //console.log(firstHalf);
         let final = secondHalf.concat(firstHalf);
         
-        final.forEach((card, index) => {
-            deckOfCards[index] = card;
-        });
+        for(let i =0; i< final.length; i++){
+            deckOfCards[i] = final[i];
+        }
+
+        //final.forEach((card, index) => {
+            //deckOfCards[index] = card;
+       // });
 
         console.log("Deck of Cards - ", deckOfCards);
 
